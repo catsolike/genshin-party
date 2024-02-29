@@ -33,7 +33,7 @@ const credits = ref<string[]>([`Design by `, `Site by `])
 const headerTitles = ref<string[]>(['Genshin Impact', 'Party']);
 const footerTxt = ref<string[]>(['Party combo', 'Check your waifu', 'Just for fun']);
 const logo = ref<IImage>({
-    src: '/img/logo.svg',
+    src: 'img/logo.svg',
     alt: 'Mihoyo',
 });
 const genshinLink = ref<string>('https://genshin.hoyoverse.com');
