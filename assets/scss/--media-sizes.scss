@@ -1,0 +1,43 @@
+//#region SCSS
+@media screen {
+    @media (min-width: $size_1) {
+
+    }
+    @media (min-width: $size_2) {
+
+    }
+    @media (min-width: $size_3) {
+
+    }
+    @media (min-width: $size_4) {
+
+    }
+    @media (min-width: $size_5) {
+
+    }
+    @media (min-width: $size_6) {
+
+    }
+}
+//#endregion SCSS
+
+//#region CSS
+@media screen and (min-width: $size_1) {
+    
+}
+@media screen and (min-width: $size_2) {
+
+}
+@media screen and (min-width: $size_3) {
+
+}
+@media screen and (min-width: $size_4) {
+
+}
+@media screen and (min-width: $size_5) {
+
+}
+@media screen and (min-width: $size_6) {
+
+}
+//#endregion CSS

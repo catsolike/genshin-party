@@ -1,0 +1,33 @@
+//#region Imports
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.ttf') format("truetype");
+    font-display: swap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import '_reset.scss';
+@import '_colors.scss';
+@import '_z-indexes.scss';
+//#endregion Imports
+
+
+//#region Adaptive
+$size_1: 0px; //from this to size_2
+$size_2: 360px; //from this to size_3
+$size_3: 480px; //from this to size_4
+
+$size_4: 800px; //from this to size_5
+$size_5: 1280px; //from this to size_6
+
+$size_6: 1920px; //from this to infinity
+//#endregion Adaptive
+
+$font-size__base: 20px;
+$font-size__base_mini: 16px;
