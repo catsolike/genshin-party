@@ -23,9 +23,9 @@ const linkTitles = ref(['Character','Check'])
 		<div class="circle-bg cbg_2"></div> -->
 		
 		<img class="character-card__image" :src="character.image" :alt="character.name">
-		<!-- <a class="character-card__barcode" :href="character.link">
-			<img class="character-card__barcode" src="" alt="Barcode">
-		</a> -->
+		<a class="barcode character-card__barcode" :href="character.link">
+			<img class="barcode__img" :src="character.barcodePath" alt="Barcode">
+		</a>
 	</div>
 </template>
 
@@ -48,17 +48,18 @@ a {
 				display: grid;
 				grid-template-rows: repeat(1fr);
 				grid-template-columns: 100%;
-
+				
 				padding: 0 0 10px 0;
-
+				
 				overflow: hidden;
 				
 				font-family: 'GmarketSans';
-
+				
 				border-radius: 2px;
 			}
 			@media (min-width: $size_2) {
 				grid-template-columns: 50% 50%;
+				display: grid;
 			}
 			@media (min-width: $size_3) {
 				max-width: $size_3 - 20px;
@@ -75,7 +76,7 @@ a {
 				grid-template-rows: 40px
 									60px
 									min-content
-									80px
+									min-content
 									10px;
 				
 				max-width: $size_4 - 20px;
@@ -232,6 +233,7 @@ a {
 				grid-column: 1;
 				
 				padding: 5px;
+				align-self: flex-end;
 				
 				text-transform: none;
 				font-family: 'Montserrat';
@@ -310,32 +312,39 @@ a {
 				z-index: $z-txt_2;
 				justify-self: center;
 
-				padding: 10px;
+				padding-top: 10px;
+
+				max-width: 90%;
+				max-height: 90%;
 			}
 			@media (min-width: $size_2) {
 				grid-column: 1 / 3;
-
-			}
-			@media (min-width: $size_3) {
 
 			}
 			@media (min-width: $size_4) {
 				grid-row: 4;
 				grid-column: 5;
 
-				align-self: end;
-				justify-self: end;
+				align-self: center;
+				justify-self: center;
 				padding: 20px;
+
+				// max-width: 50%;
 			}
 			@media (min-width: $size_5) {
 				padding: 30px;
 			}
-			@media (min-width: $size_6) {
-
-			}
 		}
 	}
 }
+
+.barcode{
+	&__img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
 .name {
 	&_big {
 		@media screen {

@@ -7,6 +7,7 @@ const characters = ref<ICharacter[]>([
             image: 'img/yanfei.png',
             link: 'https://genshin-impact.fandom.com/wiki/Yanfei',
             description: 'Sometimes the law is compatible with human nature, but sometimes the two conflict. Balancing the two is a discipline in its own right...',
+            barcodePath: 'img/barcodes/yanfei.svg'
         },
         {   
             id: 1,
@@ -14,6 +15,7 @@ const characters = ref<ICharacter[]>([
             image: 'img/keqing.png',
             link: 'https://genshin-impact.fandom.com/wiki/Keqing',
             description: 'Hello. I am Keqing, Yuheng of the Liyue Qixing. We live in an era of change, as the old order that has existed for a thousand years is about to be rewritten. Join me. Let us bear witness to this historical moment together.',
+            barcodePath: 'img/barcodes/keqing.svg'
         },
         {   
             id: 2,
@@ -21,6 +23,7 @@ const characters = ref<ICharacter[]>([
             image: 'img/ganyu.png',
             link: 'https://genshin-impact.fandom.com/wiki/Ganyu',
             description: 'Copy that! Here is a draft Service Agreement for your review and consideration. Effective immediately, if all is in order… Ah! Wait a sec, wait a sec, I forgot to sign it… Gan… Yu… There. Right. Now… What was it you needed me to do for you exactly?',
+            barcodePath: 'img/barcodes/ganyu.svg'
         },
     ]);
 
@@ -42,6 +45,7 @@ const genshinLink = ref<string>('https://genshin.hoyoverse.com');
 
 <template>
     <div class="index_grid">
+        <!-- <object style="background-color: white;" data="img/qr.svg?data=https://genshin-impact.fandom.com/wiki/Yanfei" type="image/svg+xml" width="200" height="200"></object> -->
         <header class="index__header">
             <h1 class="index__title index__title_1">{{ headerTitles[0] }}</h1>
             <h2 class="index__title index__title_2">{{ headerTitles[1] }}</h2>
