@@ -1,9 +1,9 @@
-<script setup>
+<script lang="ts" setup>
 const props = defineProps({
-  character: Object
+  character: {type: Object, required: true}
 })
 
-const linkTitles = ref(['Character','Check'])
+const linkTitles = ref<string[]>(['Character','Check'])
 
 </script>
 
